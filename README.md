@@ -47,5 +47,6 @@ RMSE and MAE are used to measure the model performance and recorded in csv file 
 
 ### Automation the processs
 - for the feature engineering, since this is a time series regression problem, we can use TSFresh to automate the feature engineering, and apply other ML models like Random Forest, Linear Regression, et. 
-- for the model selection, mlflow can be used to visulize the model performance during model training, and log the model, parameters, and other artifacts.
+- for the model selection, automl can be used to auto-train models and seleting the best model based on performance metric, mlflow can be used to visulize the model performance during model training, and log the model, parameters, and other artifacts.
+
 - for the monitoring of model, we can use grafana to monitering the model real-time perforance. 
