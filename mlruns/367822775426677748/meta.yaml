@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/367822775426677748
+creation_time: 1725516332855
+experiment_id: '367822775426677748'
+last_update_time: 1725516332855
+lifecycle_stage: active
+name: ec-price-experiment

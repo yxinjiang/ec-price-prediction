@@ -2,7 +2,7 @@
 
 
 ### Postgress run in docker
-1. Create a docker compose file
+1. Create a docker compose file in postgresql-setup folder
 2. Start the PostgreSQL container
 ```bash
 docker-compose up -d
