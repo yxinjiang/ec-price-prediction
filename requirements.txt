@@ -1,6 +1,6 @@
 fastapi==0.112.2
 fastapi_cache==0.1.0
-Flask==3.0.3
+uvicorn
 joblib==1.3.2
 numpy==1.23.5
 pandas

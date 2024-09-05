@@ -20,8 +20,6 @@ Show in 'all diagram.pptx'
 ### Model building
 1. After EDA, I found that the resale EC price is highly correlated to the floor area of the unit, the years after lease commencing, less correlated to the location of the EC, and it is also highly correlated with the time effect.
 
-
-
 2. I use Prophet to build several time-series forecasting models based on the years after lease commencing, and the area of the units. The continous value of unit area is transformed into discrete value by using KBinsDiscretizer 
 
 
@@ -34,7 +32,10 @@ Please find the script in main.py
 python3 -m uvicorn main:app --reload
 ```
 A Dockerfile is created to containerize the app.
-
+```base
+docker build -t fastapi-app .
+docker run -p 8000:8000 fastapi-app
+```
 
 ### Cloud architecture
 

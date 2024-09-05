@@ -23,3 +23,5 @@ async def get_predictions(area:int,year_after_lease_com:int,date_start:str,date_
         'Prediction':predict,
                 }
     return response
+
+
