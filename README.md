@@ -61,7 +61,8 @@ The docker image will be pushed to AWS ECR and deployed on AWS App Runner or EC2
 
 #### ECR URI
 
-730335259946.dkr.ecr.ap-southeast-1.amazonaws.com/ec-price
+URI: 730335259946.dkr.ecr.ap-southeast-1.amazonaws.com
+image: ec-price
 
 
 ### Model monitoring
