@@ -39,7 +39,29 @@ docker run -p 8000:8000 fastapi-app
 
 ### Cloud architecture
 
-The docker image will be pushed to AWS ECR and deployed on AWS App Runner or EC2 instance by using github actions ()
+The docker image will be pushed to AWS ECR and deployed on AWS App Runner or EC2 instance by using github actions
+
+#### Simple description of the deployment
+
+1. Build docker image of the source code
+
+2. Push your docker image to ECR
+
+3. Launch Your EC2 
+
+4. Pull Your image from ECR in EC2
+
+5. Lauch your docker image in EC2
+
+##### Policy:
+
+1. AmazonEC2ContainerRegistryFullAccess
+
+2. AmazonEC2FullAccess
+
+#### ECR URI
+
+730335259946.dkr.ecr.ap-southeast-1.amazonaws.com/ec-price
 
 
 ### Model monitoring
