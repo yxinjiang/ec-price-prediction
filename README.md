@@ -27,7 +27,7 @@ Show in 'all diagram.pptx'
 
 I create a Python API using FastAPI that exposes the ML models as a RESTful service and containerize it using Docker, and deploy in aws ec2 using github CI/CD.
 
-Here is the link to the app: (http://54.255.65.238:8000/docs)
+Here is the link to the app: http://54.255.65.238:8000/docs
 ```bash
 python3 -m uvicorn main:app --reload
 ```
