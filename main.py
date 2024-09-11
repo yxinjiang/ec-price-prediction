@@ -5,10 +5,10 @@ import pandas as pd
 app = FastAPI()
 
 @app.post('/predict_price')
-async def predict_price(area:float,floor_range:str,district:str,market_segment:str,year:int,month:int,year_after_lease_com:int):
+async def predict_price(area:float,floor_range:str,district:int,market_segment:str,year:int,month:int,year_after_lease_com:int):
     area =float(area)
     floor_range = str(floor_range)
-    district = str(district)
+    district = int(district)
     market_segment = str(market_segment)
     year = int(year)
     month = int(month)
@@ -24,9 +24,9 @@ async def predict_price(area:float,floor_range:str,district:str,market_segment:s
                         'year_after_lease_com': year_after_lease_com}
                         ])
                         
-    predict = model.predict(data).loc[:, 'yhat'].to_frame().to_json()
+    prediction = model.predict(data)
     response = {
-        'Prediction':predict,
+        'Prediction': list(prediction.tolist()),
                 }
     return response
 
