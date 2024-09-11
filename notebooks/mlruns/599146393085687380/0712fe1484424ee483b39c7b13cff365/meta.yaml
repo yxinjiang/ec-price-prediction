@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mac-zhou/Desktop/Yixin/ec-price-prediction/notebooks/mlruns/599146393085687380/0712fe1484424ee483b39c7b13cff365/artifacts
+end_time: 1726055317959
+entry_point_name: ''
+experiment_id: '599146393085687380'
+lifecycle_stage: active
+run_id: 0712fe1484424ee483b39c7b13cff365
+run_name: resilient-skunk-878
+run_uuid: 0712fe1484424ee483b39c7b13cff365
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726055271782
+status: 3
+tags: []
+user_id: mac-zhou

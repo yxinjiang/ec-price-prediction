@@ -1,0 +1,1 @@
+[('kbin_encoder', KBinsDiscretizer(encode='ordinal'))]

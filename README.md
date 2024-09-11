@@ -22,14 +22,15 @@ Show in 'all diagram.pptx'
 
 2. The dataset is splitted in to train (2019 to 2023 ) and test (2024) set
 
-3. I build a regression model using xgboost, the input features are: area', 'floor_range', 'price', 'district', 'market_segment', 'year','month', 'year_after_lease_com'. RMSE, MAPE, and MAE are used as performance metrics. Mlflow is used to track the experiments and log the results.
+3. I build a regression model using xgboost, the input features are: area', 'floor_range', 'price', 'district', 'market_segment', 'year','month', 'year_after_lease_com'. . Mlflow is used to track the experiments and log the results.
 
+4. mean_absolute_percentage_error is used as performance metric, rmse and mean_absolute_error are alse calculated. Result shows that the mean_absolute_percentage_error is 9%.
 
 ### Model serving
 
 I create a Python API using FastAPI that exposes the ML models as a RESTful service and containerize it using Docker, and deploy in aws ec2 using github CI/CD.
 
-Here is the link to the app: http://54.255.65.238:8000/predict_price
+Here is the link to the app: http://54.255.65.238:8000/docs
 ```bash
 python3 -m uvicorn main:app --reload
 ```

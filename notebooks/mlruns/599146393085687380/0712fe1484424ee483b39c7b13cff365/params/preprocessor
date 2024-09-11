@@ -1,0 +1,9 @@
+ColumnTransformer(remainder='passthrough',
+                  transformers=[('num_kbin',
+                                 Pipeline(steps=[('kbin_encoder',
+                                                  KBinsDiscretizer(encode='ordinal'))]),
+                                 ['area']),
+                                ('cat_label',
+                                 Pipeline(steps=[('label_encoder',
+                                                  OrdinalEncoder())]),
+                                 ['floor_range', 'market_segment'])])

@@ -1,0 +1,12 @@
+digest: 9bff538c
+name: dataset
+profile: '{"num_rows": 7877, "num_elements": 55139}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "area", "required": true},
+  {"type": "string", "name": "floor_range", "required": true}, {"type": "long", "name":
+  "district", "required": true}, {"type": "string", "name": "market_segment", "required":
+  true}, {"type": "integer", "name": "year", "required": true}, {"type": "integer",
+  "name": "month", "required": true}, {"type": "long", "name": "year_after_lease_com",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "mac-zhou", "mlflow.source.name": "/Users/mac-zhou/miniconda3/envs/mlflow-env/lib/python3.10/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code
