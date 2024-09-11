@@ -8,7 +8,7 @@ app = FastAPI()
 @app.post('/predict_price')
 async def predict_price(area:float,floor_range:str,district:str,market_segment:str,year:int,month:int,year_after_lease_com:int):
     area =float(area)
-    floor_range = float(floor_range)
+    floor_range = str(floor_range)
     district = str(district)
     market_segment = str(market_segment)
     year = int(year)
