@@ -163,3 +163,4 @@ cython_debug/
 ./app
 ./mlruns
 ./DS_Store
+.DS_Store
