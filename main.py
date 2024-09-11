@@ -1,5 +1,4 @@
 from fastapi import FastAPI,UploadFile
-from prophet.serialize import model_from_json
 import joblib
 import pandas as pd 
 
@@ -14,8 +13,8 @@ async def predict_price(area:float,floor_range:str,district:str,market_segment:s
     year = int(year)
     month = int(month)
     year_after_lease_com =int(year_after_lease_com)
-    with open(f'./models/models.pkl', 'r') as fin:
-        model = model_from_json(fin.read())  # Load model
+
+    model = joblib.load('./models/model.pkl')  # Load model
     data = pd.DataFrame([{'area': area,
                         'floor_range': floor_range,
                         'district': district,
