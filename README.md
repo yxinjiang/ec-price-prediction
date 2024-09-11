@@ -20,7 +20,9 @@ Show in 'all diagram.pptx'
 ### Model building
 1. After EDA, I found that the resale EC price is highly correlated to the floor area of the unit, the years after lease commencing, less correlated to the location of the EC, and it is also highly correlated with the time effect.
 
-2. I use Prophet to build several time-series forecasting models based on the years after lease commencing, and the area of the units. The continous value of unit area is transformed into discrete value by using KBinsDiscretizer 
+2. The dataset is splitted in to train (2019 to 2023 ) and test (2024) set
+
+3. I build a regression model using xgboost, the input features are: area', 'floor_range', 'price', 'district', 'market_segment', 'year','month', 'year_after_lease_com'. RMSE, MAPE, and MAE are used as performance metrics. Mlflow is used to track the experiments and log the results.
 
 
 ### Model serving
