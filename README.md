@@ -25,9 +25,9 @@ Show in 'all diagram.pptx'
 
 ### Model serving
 
-I create a Python API using FastAPI that exposes the ML models as a RESTful service and containerize it using Docker. 
-Please find the script in main.py
+I create a Python API using FastAPI that exposes the ML models as a RESTful service and containerize it using Docker, and deploy in aws ec2 using github CI/CD.
 
+Here is the link to the app: (http://54.255.65.238:8000/docs)
 ```bash
 python3 -m uvicorn main:app --reload
 ```
@@ -61,7 +61,7 @@ The docker image will be pushed to AWS ECR and deployed on AWS App Runner or EC2
 
 #### ECR URI
 
-URI: 730335259946.dkr.ecr.ap-southeast-1.amazonaws.com
+URI: {YOUR-ECR_URI}.dkr.ecr.ap-southeast-1.amazonaws.com
 repo name: ec-price
 
 
